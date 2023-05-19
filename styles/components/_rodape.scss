@@ -1,0 +1,10 @@
+@import "../abstract/variavel";
+.rodape{
+    p{
+        text-align: center;
+        color: $cor-de-p;
+        &:hover{
+            color:  $cor-de-hover;
+        }
+    }
+}

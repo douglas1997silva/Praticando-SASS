@@ -1,0 +1,64 @@
+@import "../abstract/variavel";
+
+
+.navegando{
+         position: sticky;
+         top: 0;
+    nav{
+        width: 100px;
+        height: 120px;
+         display: flex;
+         justify-content: space-between;
+         //background-color: $cor-de-fundo;
+         padding: 0px 60px 0px 60px;
+         align-items: center;
+         gap:120px;
+         
+         
+    }
+    
+        
+    input{
+        height: 50px;
+        width: 800px;
+        background-color: $cor-do-input;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-align: center;
+        &::placeholder{
+            margin: 0 10px 0px 10px;
+            background: url(../../img/Search.svg) no-repeat;
+            padding: 0 2rem;
+            background-position: 10px;
+            &:focus-within,&:hover{
+                box-shadow: 1px 1px 8px 1px $cor-de-hover;
+                outline: none;
+            }
+           
+        }
+    }
+    
+        .container-menu{
+            display: flex;
+            justify-content: end;
+            column-gap: 0.5rem;
+            img{
+                
+                cursor: pointer;
+            }
+        }
+    
+}
+@media(min-width:360px){
+    
+        }
+        .container-menu{
+            display: none;
+            justify-content: center;
+        }
+    
+
+    input{
+        display: none;
+}
